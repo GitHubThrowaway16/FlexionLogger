@@ -14,7 +14,8 @@ public class FlexionLogger {
 	private static final SimpleDateFormat LOG_ENTRY_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
 	/*
-	 * Contains a queue of Strings FlexionLogger if logs are being received quicker than they can be written
+	 * Contains a queue of Strings if logs are being received quicker than they 
+	 * can be written by mWriterThread
 	 */
 	private ArrayBlockingQueue<String> mQueuedStrings;
 	
